@@ -1,0 +1,119 @@
+:root {
+  --main-color: hsl(225, 100%, 94%);
+  --second-color: hsl(245, 75%, 52%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+
+}
+@media (max-width: 1440px) {
+  .background {
+    height: 100vh;
+    width: 100%;
+    background: var(--main-color);
+    position: relative;
+  }
+  section {
+    position: relative;
+    background-color: #fff;
+    margin: -296px auto;
+    text-align: center;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 6px;
+  }
+  section svg {
+    max-width: 100%;
+  }
+
+  section .text-1 {
+    padding: 20px;
+  }
+  section .text-1 h1 {
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  section .text-1 p {
+    color:  hsl(224, 23%, 55%);
+    margin-top: 15px;
+  }
+
+  section .music {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 10px auto;
+  position: relative;
+  background-color: rgba(238, 237, 237, 0.267);
+  width: 360px;
+  border-radius: 10px;
+}
+section .music svg {
+  margin-right: 10px;
+}
+section .text-2 {
+  margin-right: 110px;
+}
+section .text-2 h4 {
+  margin-bottom: 3px;
+}
+section .text-2 p {
+  color: hsl(224, 23%, 55%);
+}
+section .music a {
+  color: var(--second-color);
+  transition: 0.2s;
+}
+section .music a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+section button {
+  padding: 15px;
+  margin: 10px;
+  width: 370px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--second-color);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px 0px #000000e0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+section button:hover {
+  opacity: 0.7;
+}
+
+section .footer a {
+  text-decoration: none;
+  padding: 21px;
+  margin-bottom: 28px;
+  display: block;
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+  transition: 0.2s;
+}
+section .footer a:hover {
+  color: black;
+}
+}
+.attribution {
+  padding: 20px;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
